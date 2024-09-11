@@ -1,0 +1,22 @@
+{
+  "name": "norris",
+  "version": "1.0.0",
+  "description": "<h1>node-norris</h1>\r Esercizio Sfruttando l’api https://api.chucknorris.io/jokes/random creare un applicazione che scarica una battuta random, la aggiunge ad un file json norrisDb.json e la mostra all’utente.<br>\r Il file json quindi dovrà contenere la lista di tutte le battute scaricate nell’arco del tempo.<br>\r Per evitare che nodemon riavvii il server ogni volta che questo file viene modificato, aggiungete la seguente configurazione nel file package.json: <br>\r <body>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "nodemonConfig": {
+        "ignore": ["norrisDb.json"]
+    }
+}
